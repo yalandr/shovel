@@ -1,0 +1,284 @@
+/*==== Pre-settings =======================================*/
+*{box-sizing: border-box; margin: 0; padding: 0; transition: opacity 300ms ease;}
+html {scroll-behavior: smooth;}
+body {font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 1.6rem; font-weight: 300;}
+a,a:visited{text-decoration: none; color: inherit;}
+a:hover {text-decoration: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+
+
+
+.container {
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	height: 4rem;
+	background: #4E8662;
+	color: #1a1a1a;
+	font-family: Verdana;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	width: 18rem;
+	position: relative;
+	border: 1px solid tomato;
+}
+
+.logo h3 {
+	position: absolute;
+	top: -1.2rem;
+	left: 16%;
+	z-index: 66;
+}
+
+.white-square {
+	position: absolute;
+	border: 3px solid #fff;
+	width: 2.2rem;
+	height: 2.2rem;
+	left: 13%;
+	top: -1rem;
+	z-index: 33;
+}
+
+.main-content {
+	width: 100%;
+	height: auto;
+	display: flex;
+	padding: 0 0 3rem 0;
+}
+
+.left-column {
+	width: 54%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+.right-column {
+	width: 44%;
+	height: auto;
+}
+
+#slider {display: none;}
+
+.main-heading {
+	font-size: 3.4rem;
+	font-weight: 400;
+	text-align: center;
+	line-height: 3rem;
+	letter-spacing: .1rem;
+	margin: 3rem;
+}
+
+.rating {
+	width: 100%;
+	text-align: center;
+	background: #eee;
+	padding: .5rem;
+}
+
+.price-block {
+	text-align: center;
+	padding: 1rem;
+}
+
+.ua-flag {
+	width: 1.4rem;
+	height: auto;
+	margin-left: 2rem;
+}
+
+.old-price {font-size: 1.2rem;}
+
+.active-price {margin-top: 1rem;}
+
+.text-golden {
+	color: gold;
+	font-weight: 800;
+	font-size: 2.5rem;
+}
+
+.grey-line {
+	width: 8rem;
+	height: 2px;
+	background: #bbb;
+	margin: 1rem auto;
+}
+
+.quantity-block {
+	text-align: center;
+	padding: 1rem;
+}
+
+.quantity-input {
+	padding: .5rem .3rem;
+	border: none;
+	background: #eee;
+}
+
+#summary {
+	width: 5rem;
+	font-size: 
+}
+
+.buy-btn {
+	width: 100%;
+	background: #F6AA39;
+	color: #fff;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	border-style: none;
+	transition: .3s;
+}
+
+.buy-btn:hover {
+	background: #F89705;
+	box-shadow: 0 0 3px #888;
+}
+
+.sales-heading {
+	text-transform: uppercase;
+	font-family: Verdana;
+	font-size: 1.2rem;
+	font-weight: 800;
+	text-align: center;
+	padding: 1rem;
+	background-color: #FEEC56;
+}
+
+.text {
+	padding: 2rem 1rem;
+	line-height: 2rem;
+}
+
+h2 {
+	text-align: center;
+	margin: 1rem 0 0 0;
+}
+
+ul {
+	padding-left: 3rem;
+	line-height: 2rem;
+	padding-bottom: 2rem;
+}
+
+.review-header {
+	display: flex;
+}
+
+.write-btn {
+	width: 18rem;
+	font-size: 1.2rem;
+	border: 1px solid #555;
+	background: transparent;
+	transition: .3s;
+}
+
+.write-btn:hover {
+	background: #87CEFD;
+}
+
+.review-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.review-column {
+	width: 24%;
+}
+
+.review-item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.review-item:hover {
+	opacity: .9;
+}
+
+.review-text {
+	background: #F0F0F0;
+	padding: .5rem 1rem;
+}
+
+.review-date {
+	color: #888;
+	font-size: 1rem;
+}
+
+.review-rating {
+	font-size: 1rem;
+}
+
+.text-grey {
+	color: #555;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+}
+
+.footer {
+	width: 100%;
+	height: 4rem;
+	background: #555;
+	color: #1a1a1a;
+	font-family: Verdana;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*==== Media Queries ======================================*/
+@media (max-width: 991px) {
+	.container {
+		width: 95%;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		width: 100%;
+	}
+}
+@media (max-width: 479px) {
+	.header {height: 3rem; font-size: 1.2rem;}
+	.logo h3 {top: -1rem;}
+	.left-column {display: none;}
+	.right-column {width: 100%;}
+	.slider-block {display: block; width: 100%; height: 23rem;}
+	.slider-img {height: 100%;}
+	.main-heading {font-size: 2.2rem; line-height: 1.8rem; margin: 1rem;}
+	.text-golden {display: block;}
+	.rewiew-column {width: 49%;}
+	.rewiew-content {padding: 1rem;}
+}
