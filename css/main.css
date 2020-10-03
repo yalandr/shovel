@@ -120,6 +120,8 @@ img {
 
 .old-price {font-size: 1.2rem;}
 
+.line-through {text-decoration: line-through;}
+
 .active-price {margin-top: 1rem;}
 
 .text-golden {
